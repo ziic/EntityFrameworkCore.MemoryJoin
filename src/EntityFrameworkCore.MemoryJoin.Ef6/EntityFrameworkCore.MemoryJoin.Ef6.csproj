@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>Copyright © Anton Shkuratov 2018</Copyright>
+    <Company />
+    <Authors>Anton Shkuratov</Authors>
+    <PackageId>EntityFramework.MemoryJoin</PackageId>
+    <Version>0.7.8</Version>
+    <AssemblyVersion>0.7.8.0</AssemblyVersion>
+    <FileVersion>0.7.8.0</FileVersion>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyName>EntityFrameworkCore.MemoryJoin</AssemblyName>
+    <TargetFrameworks>net7.0;netstandard2.1</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\EntityFramework.MemoryJoin\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\EFHelper.cs" Link="Internal\EFHelper.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\InterceptionOptions.cs" Link="Internal\InterceptionOptions.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\KnownProvider.cs" Link="Internal\KnownProvider.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\Mapping.cs" Link="Internal\Mapping.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\MappingHelper.cs" Link="Internal\MappingHelper.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\Internal\ValuesInjectionMethodInternal.cs" Link="Internal\ValuesInjectionMethodInternal.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\MemoryJoiner.cs" Link="MemoryJoiner.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\MemoryJoinerInterceptor.cs" Link="MemoryJoinerInterceptor.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\QueryModelClass.cs" Link="QueryModelClass.cs" />
+    <Compile Include="..\EntityFramework.MemoryJoin\ValuesInjectionMethod.cs" Link="ValuesInjectionMethod.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Internal\" />
+  </ItemGroup>
+
+</Project>
